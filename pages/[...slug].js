@@ -5,7 +5,6 @@ import {
 } from "@storyblok/react";
 import { useEffect } from "react";
 import { useGlobalContext } from "../context/GlobalContext";
-
 import Layout from "../components/Layout";
 
 export default function Page({ story, global_data }) {
