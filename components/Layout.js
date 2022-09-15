@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Footer from "./Footer";
 import Link from "next/link";
 
 export default function Layout({ children, global }) {
@@ -24,7 +23,6 @@ export default function Layout({ children, global }) {
         })}
 
       <div className="max-w-5xl p-10 mx-auto">{children}</div>
-      <Footer />
     </div>
   );
 }
