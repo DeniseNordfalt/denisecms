@@ -12,7 +12,9 @@
     "next": "^12.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.5"
+    "storyblok-rich-text-react-renderer": "^2.6.0",
+    "styled-components": "^5.3.5",
+    "vercel": "^28.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
