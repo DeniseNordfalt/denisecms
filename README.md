@@ -1,33 +1,36 @@
-# Getting Started - Next.js edition
+# CMS Final project
 
-This is a `Hello World` example project built with Storyblok and Next.js.
+This is a project built with Storyblok and Next.js, deployed to Vercel.
 
-> To get better understanding of this project and how it works, read our [Getting Started guide](https://www.storyblok.com/docs/guide/getting-started/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
+## Backend
 
-## Stackblitz
+To reach the CMS and backend, access to Storyblok is needed.
+This will be provided by email invite from the owner of the space.
 
-[Edit with Stackblitz ⚡️](https://stackblitz.com/edit/getting-started-next)
+Storyblok provides a limited account free of charge.
 
-## Configuration Steps
+## Frontend
 
-1. [Create a new Space](https://app.storyblok.com/#!/me/spaces/new) in Storyblok
-2. Obtain a Preview Token from the Settings of the Space.
-3. Replace the `accessToken` value in `pages/_app.js` file with your Preview Token.
-4. You can start a Dev Server with your Next.js project, and it will consume data from your Storyblok Space.
+Clone the repository
+`git clone https://github.com/DeniseNordfalt/denisecms.git`
 
-> For a more advanced article on how to build a multilanguage website using Storyblok and Next.js, check [The Complete Guide to Build a Full Blown Multilanguage Website with Next.js](https://www.storyblok.com/tp/next-js-react-guide/?utm_source=github.com&utm_medium=readme&utm_campaign=getting-started).
+install dependencies
+`npm i`
 
-## Learn More
+create a `.env` file with a variable named `STORYBLOK_API_TOKEN=`
 
-To learn more about Next.js, take a look at the following resources:
+inside the storyblok space, go to settings > api-key and select the preview token and add the value to the `STORYBLOK_API_TOKEN` variable.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The project is deployed to vercel: [denisecms.vercel.app](https://denisecms.vercel.app/)
 
-## Deploy on Vercel
+Deployments are made for both production from the master branch and for preview from the development branch.
+The production branch should only show published content, while the preview branch should show both published and unpusblished content.
+Published and unpublished content is deployed depending on the API-key access tokens set in Vercels enviroment variables.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import) from the creators of Next.js.
+Vercel automatically deploys after a push to a git branch.
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Production: https://github.com/DeniseNordfalt/denisecms/deployments/activity_log?environment=Production
+
+Preview: https://github.com/DeniseNordfalt/denisecms/deployments/activity_log?environment=Preview
