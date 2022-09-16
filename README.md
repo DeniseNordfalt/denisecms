@@ -33,17 +33,28 @@ The only env variable that needs to be changed is the `STORYBLOK_API_TOKEN` in t
 
 ## Development
 
-Set up the preview domain in the Storyblok space to `http://localhost:3000`. Use Storyblok V1, since V2 requires https://.
+Set up the default domain to the live site in settings: https://denisecms.vercel.app or http://localhost:3000/ if working locally.
+Set up the edit preview domain in the Storyblok space to `http://localhost:3000/api/preview?secret=STORYBLOK_API_TOKEN&slug=`. Use Storyblok V1, since V2 requires https://.
+Where STORYBLOK_API_TOKEN is the value of the env variable/preview access token. This will only be used inside of the CMS, and is used to see unpublished edits made to the visual editor.
 
-Start the project with `npm run dev`
+Start the project in your visual studio code editor terminal with `npm run dev`
 
 The full API is reachable at: `https://api.storyblok.com/v2/cdn/stories/?version=draft&token=STORYBLOK_API_TOKEN`
 
-Where STORYBLOK_API_TOKEN is the access token for the api described previously in the frontend section.
+Where STORYBLOK_API_TOKEN is the access token for the api described previously.
 
 To switch to see only published on unpublished content, change the value in the variable sbParams in pages/index.js and pages/[...slug].js.
 'production' for the live site.
 'draft' for development.
+
+## Storyblok CMS
+
+To make new content. Go to the content folder, press the +Entry button in the top right corner and select type of entry.
+Static pages are `Page` and Blog posts are `Post`.
+Only published content will show up when using the master branch. To publish click publish in the top right corner when inside a Post.
+Or select Content and click publish when outside of the content component.
+
+To see edits not yet published. Make sure to use development bransch, or temporarily switch sbParams to draft i master, and use the edit preview link in the dropdown in the adressbar.
 
 ## Deploy
 
