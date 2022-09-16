@@ -31,7 +31,8 @@ export async function getStaticProps() {
   let slug = "home";
 
   let sbParams = {
-    version: "draft", // or 'published'
+    // version: "draft"
+    version: "published",
   };
 
   const storyblokApi = getStoryblokApi();
