@@ -4,12 +4,17 @@ This is a project built with Storyblok and Next.js, deployed to Vercel.
 
 ## Backend
 
-To reach the CMS and backend, access to Storyblok is needed.
+To reach the CMS and backend, access to the Storyblok space is needed.
 This will be provided by email invite from the owner of the space.
-
+When recieving the invite, you'll need to sign up for a storyblok account.
 Storyblok provides a limited account free of charge.
 
+If you wish to recieve an invite, you can email the space owner at: denisenordfalt@gmail.com
+
 ## Frontend
+
+This project is written with the help of Visual Studio Code
+`https://code.visualstudio.com/`
 
 Clone the repository
 `git clone https://github.com/DeniseNordfalt/denisecms.git`
@@ -19,7 +24,7 @@ install dependencies
 
 create a `.env` file with a variable named `STORYBLOK_API_TOKEN=`
 
-inside the storyblok space, go to settings > api-key and select the preview token and add the value to the `STORYBLOK_API_TOKEN` variable.
+inside the storyblok space, go to settings > API-keys and select the `preview` token. Add the value of the token to the `STORYBLOK_API_TOKEN` variable.
 
 ## Deploy
 
