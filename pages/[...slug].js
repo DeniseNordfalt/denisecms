@@ -31,8 +31,8 @@ export async function getStaticProps({ params }) {
   let slug = params.slug ? params.slug.join("/") : "home";
 
   let sbParams = {
-    // version: "draft",
-    version: "published",
+    version: "draft",
+    // version: "published",
   };
 
   const storyblokApi = getStoryblokApi();

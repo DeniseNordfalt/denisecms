@@ -56,6 +56,9 @@ Or select Content and click publish when outside of the content component.
 
 To see edits not yet published. Make sure to use development bransch, or temporarily switch sbParams to draft i master, and use the edit preview link in the dropdown in the adressbar.
 
+Tip: Config is a component that controls global data throughout the project, at the moment it works for favicon and navigation menu.
+I've written an article about it for Will&Skill here if curious and need more documentation: https://www.willandskill.se/artiklar/storyblok-tips-config-sida-foer-globalt-innehall
+
 ## Deploy
 
 The project is deployed to vercel: [denisecms.vercel.app](https://denisecms.vercel.app/)
