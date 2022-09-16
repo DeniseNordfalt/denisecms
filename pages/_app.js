@@ -9,6 +9,7 @@ import Page from "../components/Page";
 import Teaser from "../components/Teaser";
 import Button from "../components/library/atoms/Button";
 import Post from "../components/Post";
+import PostFeed from "../components/PostFeed";
 
 const components = {
   feature: Feature,
@@ -18,10 +19,11 @@ const components = {
   button: Button,
   config: Page,
   post: Post,
+  post_feed: PostFeed,
 };
 
 storyblokInit({
-  accessToken: process.env.STORYBLOK_API_TOKEN,
+  accessToken: process.env.storyblokApiToken,
   use: [apiPlugin],
   components,
 });
