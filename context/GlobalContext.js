@@ -10,7 +10,6 @@ export const GlobalProvider = ({ children }) => {
   const [global, setGlobal] = useState({});
 
   const handleSetGlobal = (data) => {
-    console.log("context data", data);
     const stories = data?.data?.stories[0];
     const content = stories?.content;
     setGlobal(content);

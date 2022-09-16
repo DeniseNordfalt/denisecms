@@ -2,8 +2,6 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function Layout({ children, global }) {
-  console.log("global", global?.navigation);
-
   return (
     <div>
       <Head>
