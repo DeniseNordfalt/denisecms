@@ -5,18 +5,18 @@ const PostPreview = ({ post }) => {
   return (
     <div className="column feature">
       <div className="p-6">
-        {post?.image ? (
+        {post?.image?.filename ? (
           <img
             className="object-cover object-center w-full mb-8 lg:h-48 md:h-36 rounded-xl"
             src={post.image.filename}
-            alt="blog"
+            alt={post.image.alt ? post.image.alt : "unnamed image"}
           />
         ) : (
           <></>
         )}
-        <h1 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">
+        <h2 className="mx-auto mb-8 text-2xl font-semibold leading-none tracking-tighter text-neutral-600 lg:text-3xl">
           {post.title}
-        </h1>
+        </h2>
         <div className="mx-auto text-base leading-relaxed text-gray-500 line-clamp-2">
           {render(post.blurb)}
         </div>

@@ -6,10 +6,10 @@ export default function Post({ blok, story }) {
   return (
     <section {...storyblokEditable(blok)} className="text-gray-600 body-font">
       <div className="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        {blok?.image ? (
+        {blok?.image?.filename ? (
           <img
             className="  md:h-96 w-full mb-10 object-cover object-center rounded"
-            alt={blok.image.alt}
+            alt={blok.image.alt ? blok.image.alt : "unnamed image"}
             src={blok.image.filename}
           />
         ) : (
